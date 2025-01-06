@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Game Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Game Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="#game1">Game 1</a></li>
+                <li><a href="#game2">Game 2</a></li>
+                <li><a href="#game3">Game 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="game1">
+            <h2>Game 1: Rock, Paper, Scissors</h2>
+            <p>Play the classic Rock, Paper, Scissors game!</p>
+            <button onclick="playRPS()">Play</button>
+            <p id="rps-result"></p>
+        </section>
+        
+        <section id="game2">
+            <h2>Game 2: Guess the Number</h2>
+            <p>Try to guess the number between 1 and 10.</p>
+            <input type="number" id="guess" min="1" max="10">
+            <button onclick="guessNumber()">Guess</button>
+            <p id="number-result"></p>
+        </section>
+
+        <section id="game3">
+            <h2>Game 3: Click Me!</h2>
+            <p>Click the button as fast as you can!</p>
+            <button onclick="clickMe()">Click me!</button>
+            <p id="click-count">You clicked 0 times.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Game Collection. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
